@@ -1,2 +1,205 @@
-<h1>MainControler#homepage</h1>
-<p>Find me in app/views/main_controler/homepage.html.erb</p>
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT-Wolfs</title>
+    <script src="js/vendor/modernizr.js"></script>
+    <style>#map-canvas {width: 700px;height: 500px;}</style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(52.409178, 16.915965),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <div class="fullWidth">
+        <nav class="top-bar" data-topbar role="navigation">
+          <ul class="title-area">
+            <li class="name">
+              <h1><%= image_tag("logo.svg", size: "150x150", alt: "IT-Tigers") %></h1>
+            </li>
+             <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="active"><a href="#">Right Button Active</a></li>
+              <li class="has-dropdown">
+                <a href="#">Right Button Dropdown</a>
+                <ul class="dropdown">
+                  <li><a href="#">First link in dropdown</a></li>
+                  <li class="active"><a href="#">Active link in dropdown</a></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+      <div class="fullWidth" style="height: 96%;background-image: url(/assets/2.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+        <div class="row">
+          <div class="large-12 columns">
+               <img src="img/Napis_3.svg" alt="Sky is the Limit" height="320" width="542" left: "50%"
+    margin-right: "-50%" top="100px"> 
+    			<%= image_tag("Napis_3.svg", size: "320x542", alt: "IT-Tigers", left: "50%") %>
+          </div>
+        </div>
+      </div>
+      <div class="fullWidth" style="height: 100%;">
+        <div class="row">
+          <div class="large-12 columns">
+            <h4>About -> What we do? </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus risus leo, vulputate varius augue bibendum ut. In blandit purus sit amet metus viverra, a accumsan nisi rhoncus. Nullam dui diam, suscipit nec efficitur non, sollicitudin eu mi. Duis ante enim, tempus sit amet lacus ut, ultricies hendrerit velit. In lacinia convallis cursus. Maecenas massa turpis, semper sit amet felis eu, pellentesque auctor nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut rutrum lorem vel egestas mollis. Proin vulputate urna euismod ipsum lacinia, eget sollicitudin lorem bibendum. Quisque tristique, mi et porta faucibus, lectus ex consequat ante, in tincidunt neque nulla ac nisi. In nunc nisl, placerat eu justo nec, imperdiet tempus ex.
+              </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-3 columns">
+            <img src="http://placehold.it/400x300&text=[img]">
+          </div>
+          <div class="large-3 columns">
+            <img src="http://placehold.it/400x300&text=[img]">
+          </div>
+          <div class="large-3 columns">
+            <img src="http://placehold.it/400x300&text=[img]">
+          </div>
+          <div class="large-3 columns">
+            <img src="http://placehold.it/400x300&text=[img]">
+          </div>
+        </div>
+      </div>
+      <div class="fullWidth" style="height: 100%;">
+        <div class="row">
+          <div class="large-8 columns">
+            <h4>Work Process Part (1) </h4>
+            <p></p>
+            <i class="fi-social-twitter"></i>
+          </div>
+          <div class="large-4 columns">
+            <img src="http://placehold.it/400x300&text=[img]">
+          </div>
+        </div>
+      </div>
+      <div class="fullWidth" style="height: 100%;">
+        <div class="row">
+          <div class="large-8 columns">
+            <h4>Work Process Part (2) </h4>
+            <p></p>
+            <i class="fi-social-twitter"></i>
+          </div>
+          <div class="large-4 columns">
+            <img src="http://placehold.it/400x300&text=[img]">
+          </div>
+        </div>
+      </div>
+      <div class="fullWidth" style="height: 100%;background-color: #FF8300;">
+        <div class="row">
+        <div class="large-12 columns">
+          <h4>Work</h4>
+          <p>Click on each image!</p>
+          <ul class="clearing-thumbs small-block-grid-1 medium-block-grid-2 large-block-grid-4" data-clearing>
+            <li>
+              <a href="http://placehold.it/800x500&text=[img]">
+              <img data-caption="caption here..." src="http://placehold.it/800x500&text=[img]"></a>
+            </li>
+            <li>
+              <a href="http://placehold.it/800x500&text=[img]"><img data-caption="caption 2 here..." src="http://placehold.it/800x500&text=[img]"></a>
+            </li>
+            <li>
+              <a href="http://placehold.it/800x500&text=[img]"><img data-caption="caption 3 here..." src="http://placehold.it/800x500&text=[img]"></a>
+            </li>
+            <li>
+              <a href="http://placehold.it/800x500&text=[img]"><img data-caption="caption 4 here..." src="http://placehold.it/800x500&text=[img]"></a>
+            </li>
+            <li>
+              <a href="http://placehold.it/800x500&text=[img]"><img data-caption="caption 5 here..." src="http://placehold.it/800x500&text=[img]"></a>
+            </li>       
+            <li>
+              <a href="http://placehold.it/800x500&text=[img]"><img data-caption="caption 6 here..." src="http://placehold.it/800x500&text=[img]"></a>
+            </li> 
+          </ul>
+        </div>
+      </div>
+      </div>
+      <div class="fullWidth" style="height: 100%; background-color: #0084B2;">
+        <div class="row">
+        <div class="large-12 columns" style="margin-top: 20px;">
+          <h4>Contact Me</h4>
+          <div class="large-4 columns">
+            <p>Email: <a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="1e737b5e73676e716c6a7871727771307d7173">[email protected]</a><script cf-hash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */</script>
+            <br>Twitter: @twitterhandle
+            <br>Phone: 555-555-1234</p>
+          </div>
+          <div class="large-8 columns">
+            <div id="map-canvas"></div>
+          </div>
+       </div>        
+      </div>
+     </div>
+      <div class="fullWidth">
+      <footer class="row">
+          <div class="large-12 columns">
+            <hr/>
+            <div class="row">
+              <div class="large-6 columns">
+                <p>© Copyright no one at all. Go to town.</p>
+              </div>
+              <div class="large-6 columns">
+                <ul class="inline-list right">
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                  <li><a href="#">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </footer>   
+      </div> 
+      <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.topbar.js"></script>
+    <!-- Other JS plugins can be included here -->
+
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
+
+
+<!--
+	Offcanvas 	zf-offcanvas + tab
+	Topbar 	zf-topbar + tab
+	Sidenav 	zf-sidenav + tab
+	Subnav 	zf-subnav + tab
+	Breadcrumbs 	zf-breadcrumb + tab
+	Pagination 	zf-pagination + tab
+	Orbit 	zf-orbit + tab
+	Clearing 	zf-clearing + tab
+	Buttons 	zf-button + tab
+	Button Groups 	zf-button-group + tab
+	Split Buttons 	zf-split-button + tab
+	Dropdown Buttons 	zf-dropdown-button + tab
+	Reveal 	zf-reveal + tab
+	Alerts 	zf-alert + tab
+	Panels 	zf-panel + tab
+	Pricing Tables 	zf-pricing-table + tab
+	Progress Bars 	zf-progress-bar + tab
+	Accordion 	zf-accordion + tab
+	Tabs 	zf-tab + tab
+	Vertical Tabs 	zf-vertical-tab + tab
+	Horizontal Iconbar 	zf-iconbar-horizontal + tab
+	Vertical Iconbar 	zf-iconbar-vertical + tab
+	Flex Video 	zf-video + tab
+-->
